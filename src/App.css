@@ -4,6 +4,7 @@
   height: 700px;
   background-color: #fdd2e4;
   margin-top: 100px;
+  border-radius: 10px;
 }
 
 .contrastContainer {
@@ -11,6 +12,9 @@
   max-width: 800px;
   height: 500px;
   background-color: #e9ebee;
+  border-radius: 10px;
+  position: relative;
+  top: 100px;
 }
 
 .App-header {
