@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
+import Results from "./Results";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
+  let [currentDefinition, setCurrentDefinition] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
+    setCurrentDefinition(response.data[0]);
   }
 
   function search(event) {
     event.preventDefault();
-    alert(`Searching for ${keyword}`);
+    console.log(`Searching for ${keyword}`);
 
+    // API documentation (https://dictionaryapi.dev/)
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    console.log(apiUrl);
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -32,6 +34,7 @@ export default function Dictionary() {
           placeholder="Search your word here"
         />
       </form>
+      <Results currentDefinition={currentDefinition} />
     </div>
   );
 }
