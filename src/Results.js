@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Meaning from "./Meaning";
 
 export default function Results(props) {
+  console.log(props.currentDefinition);
   if (props.currentDefinition) {
     return (
       <div className="Results">
