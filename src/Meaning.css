@@ -1,0 +1,21 @@
+.Meaning {
+  color: #434751;
+}
+
+.Meaning h3 {
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.Meaning .definition {
+  font-weight: 400;
+}
+
+.Meaning .example {
+  font-style: oblique;
+  color: #5a6275;
+  padding: 10px;
+  opacity: 0.8;
+}

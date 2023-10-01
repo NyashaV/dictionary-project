@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import "./Results.css";
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 
@@ -7,20 +8,23 @@ export default function Results(props) {
   if (props.currentDefinition) {
     return (
       <div className="Results">
-        <h2>{props.currentDefinition.word}</h2>
-        {props.currentDefinition.phonetics.map(function (phonetic, index) {
-          return (
-            <div key={index}>
-              <Phonetic phonetic={phonetic} />
-            </div>
-          );
-        })}
+        <section className="singleSectionOne">
+          <h2>{props.currentDefinition.word}</h2>
+          {props.currentDefinition.phonetics.map(function (phonetic, index) {
+            return (
+              <div key={index}>
+                <Phonetic phonetic={phonetic} />
+              </div>
+            );
+          })}
+        </section>
+
         {props.currentDefinition.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
+            <section className="singleSectionTwo" key={index}>
               {" "}
               <Meaning meaning={meaning} />{" "}
-            </div>
+            </section>
           );
         })}
       </div>

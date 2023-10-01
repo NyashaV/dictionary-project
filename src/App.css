@@ -1,14 +1,12 @@
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-  height: 1200px;
   background-color: #fdd2e4;
   margin-top: 100px;
   margin-bottom: 100px;
   border-radius: 10px;
 }
 
-.contrastContainer {
+/* .contrastContainer {
   margin: 0 auto;
   max-width: 800px;
   height: 1000px;
@@ -16,21 +14,30 @@
   border-radius: 10px;
   position: relative;
   top: 100px;
-}
+} */
 
-.App-header {
-  margin: 20px 0;
+.pageContent {
+  position: relative;
+  left: 260px;
 }
 
 .App-logo {
   max-width: 50px;
-  display: block;
   margin: 0 auto;
+  display: block;
 }
 
 .appName {
-  margin: 40px;
   font-weight: 650;
-  font-size: 60px;
+  font-size: 90px;
   color: #5a6275;
+}
+
+footer {
+  font-size: 30px;
+  padding: 40px;
+}
+
+a {
+  color: slateblue;
 }
