@@ -1,14 +1,10 @@
 // import React from "react";
 
 // export default function Example(props) {
-//   if (props.example) {
+//   if (props.example >= 1) {
 //     return (
 //       <div>
-//         {" "}
-//         <span>Example: </span>
-//         {props.example.map(function (example, index) {
-//           return <span key={index}> {example} </span>;
-//         })}
+//         <strong>Example:</strong>
 //       </div>
 //     );
 //   } else {
