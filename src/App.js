@@ -17,7 +17,7 @@ export default function App() {
             </header>
 
             <main>
-              <Dictionary defaultKeyword="Lover" />
+              <Dictionary defaultKeyword="Pink" />
             </main>
 
             <footer className="text-center">
